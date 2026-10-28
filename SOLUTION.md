@@ -17,3 +17,7 @@ Local verification covered 16 tests, all exported report ids against the origina
 ## Engineering update after the first claim
 
 The first claim accepted both tickets. The course then exposed an engineering update: #4471 closed on 5 October, with parser fixed (fix(dates): parse dd/mm for eu locales) and hint closed without repair because booking-v3 was retired. The review page now distinguishes these outcomes. The author and timezone of the update are unknown. Source: https://hq.mega.dev/challenges/what-it-shows#engineering-update.
+
+## Models actually used
+
+The TypeScript program uses no LLM model and makes no LLM API request. It performs deterministic classification, deduplication and counting. gpt-6.1-sol is the agent model that read the course material, examined the evidence and implemented the program. A configured model that was not called is not reported as having executed the analysis.

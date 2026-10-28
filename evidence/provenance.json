@@ -13,5 +13,8 @@
     "Snapshot only. Refresh and review before delivery.",
     "Five one-day/timing notes are unresolved; no third root cause is established.",
     "Public GitHub issues and repository are not created by this command."
-  ]
+  ],
+  "agentModel": "gpt-6.1-sol",
+  "typescriptModel": null,
+  "execution": "Deterministic TypeScript analysis; no LLM API call."
 }
