@@ -4,13 +4,17 @@
     "title": "Shared date parser reads day-first tenant dates as MM/DD",
     "reports": 379,
     "bodyFile": "issues/parser.md",
-    "publishedIssueUrl": null
+    "publishedIssueUrl": "https://github.com/MaChilicki/mega-dev-s01e03/issues/1",
+    "state": "closed",
+    "stateReason": "completed"
   },
   {
     "key": "hint",
     "title": "booking-v3 shows MM/DD/YYYY while the tenant form reads day-first dates",
     "reports": 33,
     "bodyFile": "issues/hint.md",
-    "publishedIssueUrl": null
+    "publishedIssueUrl": "https://github.com/MaChilicki/mega-dev-s01e03/issues/2",
+    "state": "closed",
+    "stateReason": "not_planned"
   }
 ]

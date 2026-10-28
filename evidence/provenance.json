@@ -4,9 +4,9 @@
   "analyzedAt": "2026-10-28T09:16:04.202Z",
   "author": "gpt-6.1-sol",
   "signatureSha256": "3134f58eccdf2337bef3f05c2b3e4388789ff3868b531f4fa98be79989737f4b",
-  "status": "local_review_only",
-  "published": false,
-  "submittedToCourse": false,
+  "status": "solved",
+  "published": true,
+  "submittedToCourse": true,
   "algorithm": "src/lib/solution/analysis.ts",
   "sourceClassification": "src/lib/kb/causes.ts",
   "limitations": [
@@ -16,5 +16,9 @@
   ],
   "agentModel": "gpt-6.1-sol",
   "typescriptModel": null,
-  "execution": "Deterministic TypeScript analysis; no LLM API call."
+  "execution": "Deterministic TypeScript analysis; no LLM API call.",
+  "solvedAt": "2026-10-28T09:20:31.000Z",
+  "repository": "https://github.com/MaChilicki/mega-dev-s01e03",
+  "claims": 2,
+  "rejectedClaims": 0
 }
