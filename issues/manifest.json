@@ -1,0 +1,16 @@
+[
+  {
+    "key": "parser",
+    "title": "Shared date parser reads day-first tenant dates as MM/DD",
+    "reports": 379,
+    "bodyFile": "issues/parser.md",
+    "publishedIssueUrl": null
+  },
+  {
+    "key": "hint",
+    "title": "booking-v3 shows MM/DD/YYYY while the tenant form reads day-first dates",
+    "reports": 33,
+    "bodyFile": "issues/hint.md",
+    "publishedIssueUrl": null
+  }
+]

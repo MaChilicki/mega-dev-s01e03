@@ -1,0 +1,15 @@
+{
+  "name": "s01e03-support-kb-review",
+  "private": true,
+  "type": "module",
+  "scripts": { "analyze": "node tools/analyze.ts", "build": "vite build", "dev": "vite --host 127.0.0.1", "preview": "vite preview --host 127.0.0.1" },
+  "devDependencies": {
+    "@sveltejs/adapter-static": "4.0.0",
+    "@sveltejs/kit": "3.1.0",
+    "@sveltejs/vite-plugin-svelte": "7.3.1",
+    "svelte": "5.57.3",
+    "mdsvex": "0.12.8",
+    "vite": "8.3.5",
+    "typescript": "6.0.3"
+  }
+}

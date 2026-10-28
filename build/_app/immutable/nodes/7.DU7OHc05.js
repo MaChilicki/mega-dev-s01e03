@@ -1,0 +1,1 @@
+export{n as component}from"../chunks/Ba0XWV_o.js";

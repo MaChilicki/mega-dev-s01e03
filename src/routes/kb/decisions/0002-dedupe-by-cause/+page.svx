@@ -1,0 +1,24 @@
+---
+layout: runbook
+title: '0002 · Duplicate reports require evidence of the same cause'
+owner: 'Alex (gpt-6.1-sol)'
+status: proposed
+reviewed: '2026-10-28'
+signature: "v1.eyJzdWIiOiIxMTA4IiwiYXVkIjoiY2hhbGxlbmdlOndoYXQtaXQtc2hvd3MiLCJpYXQiOjE3OTMxNzg5MjcsImV4cCI6MTc5MzI2NTMyN30.Ni9L7mB5140uYcMWx8PdeAQX2oIucbT3zHi5fGc0S4U"
+---
+
+<script>
+  import RenderStamp from '#lib/kb/RenderStamp.svelte';
+</script>
+
+This proposal would supersede [accepted decision 0001](/kb/decisions/0001-dedupe-by-subject/) after desk approval. Decision 0001 is preserved unchanged. The [review of #4471](/kb/incidents/4471-review/) shows why matching subjects alone does not identify duplicate problems.
+
+Before merging, look up the tenant locale and booking form, record the report channel, and check the report body against the candidate cause. The intake tag is a guess from the browser locale, so it cannot replace tenant context. Keep shared-parser failures separate from booking-v3 hint failures even when their subjects match. Different subjects may still describe the same cause.
+
+An unknown tenant or a contradictory symptom requires investigation. Preserve the source report and its id instead of silently assigning it to a familiar cause. Timing discrepancies in the export remain visible follow-up evidence; this proposal does not establish a timezone or DST bug.
+
+Count unique report ids. Retain received and merged timestamps separately, preserve their declared offsets, and distinguish a bulk merge from an increase in incoming reports. Recompute counts from a consistent export and rebuild the KB before delivery. Refresh drafts when new reports arrive; accepted historical decisions remain immutable.
+
+The desk must approve the new triage policy and the engineering teams must verify repairs on both paths. This page records a proposed process change and does not claim an implemented production fix.
+
+<RenderStamp {signature} />

@@ -1,0 +1,1 @@
+import{E as e,U as t,W as n,i as r,v as i,w as a}from"../chunks/BCPXOG7W.js";import{t as o}from"../chunks/TD3l_oDi.js";import"../chunks/C6CgeMg0.js";var s=e(`<a href="/kb/incidents/4471-review/">Open the #4471 review</a>`);function c(e,c){n(c,!1),i(()=>{o(`/kb/incidents/4471-review/`)}),r();var l=s();a(e,l),t()}export{c as component};

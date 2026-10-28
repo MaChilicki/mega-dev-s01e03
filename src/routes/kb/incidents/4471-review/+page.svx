@@ -1,0 +1,38 @@
+---
+layout: runbook
+title: '#4471 · two date problems hidden in one ticket'
+owner: 'Alex (gpt-6.1-sol)'
+status: proposed
+reviewed: '2026-10-28'
+signature: "v1.eyJzdWIiOiIxMTA4IiwiYXVkIjoiY2hhbGxlbmdlOndoYXQtaXQtc2hvd3MiLCJpYXQiOjE3OTMxNzg5MjcsImV4cCI6MTc5MzI2NTMyN30.Ni9L7mB5140uYcMWx8PdeAQX2oIucbT3zHi5fGc0S4U"
+---
+
+<script>
+  import Resolution from '#lib/solution/Resolution.svelte';
+  import RenderStamp from '#lib/kb/RenderStamp.svelte';
+  import DedupeExplorer from '#lib/kb/DedupeExplorer.svelte';
+</script>
+
+This review replaces the conclusion “one issue, one fix” in the [old incident](/kb/incidents/4471/). The source export is a snapshot, not the live support desk. The desk continues working; refresh and review the export before publishing issues or submitting this repository.
+
+<Resolution />
+
+## What to do now
+
+Keep the shared parser and booking-v3 hint as separate engineering issues. The parser must respect the tenant date order; booking-v3 must display the same order its form accepts. Fixing one path does not prove the other is repaired. Validate both using the report evidence and resulting invites. The scenario mentions about 300,000 calendar users; that is product reach, not the number of affected users measured by this export.
+
+The [subject-only triage rule](/kb/triage/dedupe/) and [accepted decision 0001](/kb/decisions/0001-dedupe-by-subject/) are historical evidence. Their old review dates exceed the KB freshness threshold. Keep the accepted decision immutable. [Proposed decision 0002](/kb/decisions/0002-dedupe-by-cause/) would supersede it: compare tenant, locale, form and channel, and read contradictory report bodies before merging. A matching subject is neither necessary nor sufficient evidence of a shared cause. The proposal has not yet been accepted by the desk.
+
+## Check the deduplication rule
+
+<DedupeExplorer />
+
+The explorer evaluates the exported cause logic. Unknown tenants remain unplaced, so they must be investigated instead of automatically merged. Different subjects can have the same cause, and identical subjects can describe different causes.
+
+## Evidence and next review
+
+The raw sources remain in `src/lib/data/reports-4471.json`, `src/lib/data/tenants/` and `src/lib/data/desk-notes.json`. Exported classification is in `src/lib/kb/causes.ts`. The independent analysis used by this page is in `src/lib/solution/analysis.ts`. The preparation manifest records source SHA256 values in `evidence/source-sha256.json`, and the issue drafts and full membership lists are in `issues/` and `evidence/`. Counts on this page are recomputed from the loaded report and tenant files on every build; update the sources and rebuild instead of editing numbers in prose.
+
+Next, obtain a fresh export, compare memberships by report id and re-review the timing notes against booking timestamps, invite payloads and timezone information. A changed count or a newly demonstrated cause requires updated issues and a rebuilt page. No production repair, public issue or course submission is asserted by this draft.
+
+<RenderStamp {signature} />
