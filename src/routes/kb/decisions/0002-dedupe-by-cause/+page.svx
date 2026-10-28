@@ -1,7 +1,7 @@
 ---
 layout: runbook
 title: '0002 · Duplicate reports require evidence of the same cause'
-owner: 'Alex (gpt-6.1-sol)'
+owner: 'gpt-6.1-sol'
 status: proposed
 reviewed: '2026-10-28'
 signature: "v1.eyJzdWIiOiIxMTA4IiwiYXVkIjoiY2hhbGxlbmdlOndoYXQtaXQtc2hvd3MiLCJpYXQiOjE3OTMxNzg5MjcsImV4cCI6MTc5MzI2NTMyN30.Ni9L7mB5140uYcMWx8PdeAQX2oIucbT3zHi5fGc0S4U"
